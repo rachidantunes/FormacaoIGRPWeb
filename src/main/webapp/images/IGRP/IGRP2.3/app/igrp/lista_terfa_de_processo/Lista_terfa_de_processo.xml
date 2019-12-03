@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/igrp/lista_terfa_de_processo/Lista_terfa_de_processo.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2018 - Copyright NOSI v.180723</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Lista_terfa_de_processo</page>
+    <app>igrp</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.igrp.pages</package_db>
+        <package_html>Lista_terfa_de_processo</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=64</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Lista Tarefa de Processo</title>
+        <table_1 type="table" xml-type="table" title="Lista de tarefas" gen-type="container" gen-group="true">
+            <fields>
+                <n_tarefa name="p_n_tarefa" type="text" maxlength="30" align="left" lookup_parser="false" iskey="false" showLabel="true">
+                    <label>Nº Tarefa</label>
+                </n_tarefa>
+                <descricao_tarefa name="p_descricao_tarefa" type="text" maxlength="30" align="left" lookup_parser="false" iskey="false" showLabel="true">
+                    <label>Descricao Tarefa</label>
+                </descricao_tarefa>
+                <data_inicio name="p_data_inicio" type="text" maxlength="30" align="left" lookup_parser="false" iskey="false" showLabel="true">
+                    <label>Data Inicio</label>
+                </data_inicio>
+                <data_fim name="p_data_fim" type="text" maxlength="30" align="left" lookup_parser="false" iskey="false" showLabel="true">
+                    <label>Data Fim</label>
+                </data_fim>
+                <estado name="p_estado" type="color" format="hex" maxlength="30" align="left" lookup_parser="false" iskey="false" showLabel="true">
+                    <label>Estado</label>
+                </estado>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <n_tarefa name="p_n_tarefa">Perspiciatis aperiam mollit ac</n_tarefa>
+                        <descricao_tarefa name="p_descricao_tarefa">Aperiam sit labore officia ame</descricao_tarefa>
+                        <data_inicio name="p_data_inicio">Aliqua amet iste doloremque to</data_inicio>
+                        <data_fim name="p_data_fim">Dolor stract ipsum aliqua moll</data_fim>
+                        <estado name="p_estado">1</estado>
+                    </row>
+                    <row>
+                        <n_tarefa name="p_n_tarefa">Sed unde lorem unde adipiscing</n_tarefa>
+                        <descricao_tarefa name="p_descricao_tarefa">Magna sit sed labore iste</descricao_tarefa>
+                        <data_inicio name="p_data_inicio">Aperiam elit aliqua stract adi</data_inicio>
+                        <data_fim name="p_data_fim">Aliqua amet elit totam adipisc</data_fim>
+                        <estado name="p_estado">1</estado>
+                    </row>
+                    <row>
+                        <n_tarefa name="p_n_tarefa">Totam rem ipsum adipiscing omn</n_tarefa>
+                        <descricao_tarefa name="p_descricao_tarefa">Anim ipsum totam anim ipsum</descricao_tarefa>
+                        <data_inicio name="p_data_inicio">Ipsum doloremque sed dolor con</data_inicio>
+                        <data_fim name="p_data_fim">Sed ut deserunt iste consectet</data_fim>
+                        <estado name="p_estado">1</estado>
+                    </row>
+                    <row>
+                        <n_tarefa name="p_n_tarefa">Dolor officia magna unde elit</n_tarefa>
+                        <descricao_tarefa name="p_descricao_tarefa">Officia aperiam sit rem perspi</descricao_tarefa>
+                        <data_inicio name="p_data_inicio">Doloremque laudantium labore a</data_inicio>
+                        <data_fim name="p_data_fim">Ipsum consectetur officia dese</data_fim>
+                        <estado name="p_estado">1</estado>
+                    </row>
+                    <row>
+                        <n_tarefa name="p_n_tarefa">Deserunt consectetur natus ali</n_tarefa>
+                        <descricao_tarefa name="p_descricao_tarefa">Totam labore deserunt unde omn</descricao_tarefa>
+                        <data_inicio name="p_data_inicio">Voluptatem stract rem sed magn</data_inicio>
+                        <data_fim name="p_data_fim">Totam rem stract aliqua stract</data_fim>
+                        <estado name="p_estado">1</estado>
+                    </row>
+                </value>
+                <legend_color>
+                    <item>
+                        <label>Terminado</label>
+                        <value>1</value>
+                        <color>#dc2b4c</color>
+                    </item>
+                    <item>
+                        <label>Em execucao</label>
+                        <value>2</value>
+                        <color>#95c11f</color>
+                    </item>
+                </legend_color>
+            </table>
+        </table_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="voltar">
+                <title>Voltar</title>
+                <app>igrp</app>
+                <page>Detalhes_dashboard_processo</page>
+                <link>index</link>
+                <target>_self</target>
+                <img>primary|fa-angle-double-left</img>
+                <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/detalhes_dashboard_processo/Detalhes_dashboard_processo.xml</preview>
+            </item>
+        </toolsbar_1>
+    </content>
+</rows>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarmenu/PesquisarMenu.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2018 - Copyright NOSI v.180723</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>PesquisarMenu</page>
+    <app>igrp</app>
+    <plsql>
+        <action>index</action>
+        <package_instance>null</package_instance>
+        <package_db>nosi.webapps.igrp.pages</package_db>
+        <package_html>PesquisarMenu</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=9</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Gestão de Menu</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[Gestão Menu]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <aplicacao name="p_aplicacao" type="select" multiple="false" maxlength="100" required="false" change="false" disabled="false" right="false" domain="" java-type="" tags="false">
+                    <label>Aplicação</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                    <rules/>
+                </aplicacao>
+                <hidden name="p_id_app" type="hidden" maxlength="250" java-type="int" tag="id_app"/>
+            </fields>
+        </form_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="btn_novo" custom_return="true">
+                <title>Novo</title>
+                <app>igrp</app>
+                <page>Dominio</page>
+                <link>index</link>
+                <target>right_panel_submit|refresh</target>
+                <img>success|fa-plus-square</img>
+                <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/dominio/Dominio.xml</preview>
+            </item>
+        </toolsbar_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <t1_menu_principal name="p_t1_menu_principal" type="plaintext" maxlength="100" align="left" lookup_parser="false" iskey="false">
+                    <label>Menu pai</label>
+                </t1_menu_principal>
+                <ativo name="p_ativo" type="checkbox" maxlength="30" align="center" lookup_parser="false" iskey="false" switch="true" java-type="" check="true" desc="true">
+                    <label>Ativo</label>
+                </ativo>
+                <ordem name="p_ordem" type="number" min="" max="" maxlength="30" align="left" lookup_parser="false" iskey="false" total_footer="false" java-type="">
+                    <label>Ordem</label>
+                </ordem>
+                <table_titulo name="p_table_titulo" type="plaintext" maxlength="100" align="left" lookup_parser="false" iskey="false">
+                    <label>Título</label>
+                </table_titulo>
+                <pagina name="p_pagina" type="plaintext" maxlength="100" align="left" lookup_parser="false" iskey="false">
+                    <label>Página</label>
+                </pagina>
+                <checkbox name="p_checkbox" type="checkbox" maxlength="30" align="center" lookup_parser="false" iskey="false" switch="false" java-type="" check="true" desc="true">
+                    <label>Público</label>
+                </checkbox>
+                <id name="p_id" type="hidden" maxlength="30" iskey="true" java-type="" tag="id"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <t1_menu_principal name="p_t1_menu_principal">Adipiscing elit voluptatem adipiscing magna sit accusantium aliqua doloremque ipsum natus accusantiu</t1_menu_principal>
+                        <ativo name="p_ativo" check="true" desc="true">1</ativo>
+                        <ativo_desc name="p_ativo_desc">1</ativo_desc>
+                        <ordem name="p_ordem">16</ordem>
+                        <table_titulo name="p_table_titulo">Officia adipiscing ut rem magna adipiscing natus officia lorem consectetur anim stract deserunt magn</table_titulo>
+                        <pagina name="p_pagina">Officia aperiam iste anim aperiam stract rem consectetur aperiam mollit deserunt iste ut sed mollit</pagina>
+                        <checkbox name="p_checkbox" check="true" desc="true">1</checkbox>
+                        <checkbox_desc name="p_checkbox_desc">1</checkbox_desc>
+                        <id name="p_id" tag="id">hidden-148a_3908</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <t1_menu_principal name="p_t1_menu_principal">Ut unde aliqua stract dolor consectetur deserunt sed anim officia ut officia aperiam labore deserunt</t1_menu_principal>
+                        <ativo name="p_ativo" check="true" desc="true">1</ativo>
+                        <ativo_desc name="p_ativo_desc">1</ativo_desc>
+                        <ordem name="p_ordem">10</ordem>
+                        <table_titulo name="p_table_titulo">Unde lorem ipsum doloremque ipsum lorem iste rem totam sit sit ut totam mollit officia adipiscing mo</table_titulo>
+                        <pagina name="p_pagina">Sit adipiscing aperiam natus aperiam labore dolor labore magna aperiam omnis lorem anim rem consecte</pagina>
+                        <checkbox name="p_checkbox" check="true" desc="true">1</checkbox>
+                        <checkbox_desc name="p_checkbox_desc">1</checkbox_desc>
+                        <id name="p_id" tag="id">hidden-9f8b_0999</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <t1_menu_principal name="p_t1_menu_principal">Rem iste doloremque laudantium accusantium voluptatem deserunt doloremque totam aperiam unde totam l</t1_menu_principal>
+                        <ativo name="p_ativo" check="true" desc="true">1</ativo>
+                        <ativo_desc name="p_ativo_desc">1</ativo_desc>
+                        <ordem name="p_ordem">0</ordem>
+                        <table_titulo name="p_table_titulo">Amet laudantium omnis natus sit officia ipsum labore sed ut ipsum anim rem voluptatem laudantium sit</table_titulo>
+                        <pagina name="p_pagina">Magna natus sed laudantium natus accusantium anim lorem elit consectetur voluptatem doloremque anim</pagina>
+                        <checkbox name="p_checkbox" check="true" desc="true">1</checkbox>
+                        <checkbox_desc name="p_checkbox_desc">1</checkbox_desc>
+                        <id name="p_id" tag="id">hidden-339a_cf2e</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <t1_menu_principal name="p_t1_menu_principal">Sit aliqua deserunt unde aliqua sit deserunt omnis unde aliqua laudantium iste sit aperiam aliqua am</t1_menu_principal>
+                        <ativo name="p_ativo" check="true" desc="true">1</ativo>
+                        <ativo_desc name="p_ativo_desc">1</ativo_desc>
+                        <ordem name="p_ordem">9</ordem>
+                        <table_titulo name="p_table_titulo">Accusantium iste natus aliqua ut adipiscing voluptatem aliqua ut unde natus adipiscing consectetur d</table_titulo>
+                        <pagina name="p_pagina">Deserunt ipsum sed dolor magna iste rem ipsum dolor magna consectetur stract officia laudantium unde</pagina>
+                        <checkbox name="p_checkbox" check="true" desc="true">1</checkbox>
+                        <checkbox_desc name="p_checkbox_desc">1</checkbox_desc>
+                        <id name="p_id" tag="id">hidden-4175_2dd5</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <t1_menu_principal name="p_t1_menu_principal">Ut natus accusantium omnis mollit doloremque iste natus sit doloremque stract sed dolor deserunt mag</t1_menu_principal>
+                        <ativo name="p_ativo" check="true" desc="true">1</ativo>
+                        <ativo_desc name="p_ativo_desc">1</ativo_desc>
+                        <ordem name="p_ordem">13</ordem>
+                        <table_titulo name="p_table_titulo">Iste lorem adipiscing sit ipsum amet laudantium ut magna sit perspiciatis elit doloremque voluptatem</table_titulo>
+                        <pagina name="p_pagina">Doloremque sit labore laudantium magna accusantium officia doloremque mollit aperiam dolor consectet</pagina>
+                        <checkbox name="p_checkbox" check="true" desc="true">1</checkbox>
+                        <checkbox_desc name="p_checkbox_desc">1</checkbox_desc>
+                        <id name="p_id" tag="id">hidden-d090_04f0</id>
+                    </row>
+                </value>
+                <context-menu>
+                    <item type="specific" code="" class="warning" rel="editar">
+                        <title>Editar</title>
+                        <app>igrp</app>
+                        <page>PesquisarMenu</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarmenu/PesquisarMenu.xml?</parameter>
+                        <target>right_panel_submit|refresh</target>
+                        <img>warning|fa-pencil</img>
+                        <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarmenu/PesquisarMenu.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="danger" rel="eliminar" custom_return="true">
+                        <title>Eliminar</title>
+                        <app>igrp</app>
+                        <page>PesquisarMenu</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarmenu/PesquisarMenu.xml?</parameter>
+                        <target>alert_submit</target>
+                        <img>danger|fa-trash</img>
+                        <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarmenu/PesquisarMenu.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+</rows>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/inps_porton/calculo_pensao/Calculo_pensao.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Calculo_pensao</page>
+    <app>inps_porton</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.inps_porton.pages</package_db>
+        <package_html>Calculo_pensao</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=1416</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Cálculo Pensão</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p>Simula&ccedil;&atilde;o de Pens&atilde;o</p>
+]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <box_1 type="box" xml-type="form" gen-type="container" gen-group="">
+            <fields/>
+        </box_1>
+        <form_1 type="form" xml-type="form" title="Informações do Segurado" gen-type="container" gen-group="">
+            <fields>
+                <tipo_de_pensao name="p_tipo_de_pensao" type="select" multiple="false" tags="false" domain="" maxlength="4" required="true" change="false" disabled="false" right="false" java-type="">
+                    <label>Tipo de Pensão</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                    <rules>
+                        <rule type="remote_list">
+                            <proc>loadAnos</proc>
+                            <requestFields>
+                                <item>p_tipo_de_pensao</item>
+                                <item>p_ano_que_deseja_receber_pensao</item>
+                            </requestFields>
+                        </rule>
+                    </rules>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                            <message>Tipo de Pensão é de preenchimento obrigatório</message>
+                        </validation>
+                    </validations>
+                </tipo_de_pensao>
+                <anos_de_servico name="p_anos_de_servico" type="text" maxlength="2" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Anos de Serviço</label>
+                    <value>An</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                            <message>Anos de Serviço é de preenchimento obrigatório</message>
+                        </validation>
+                        <validation>
+                            <annotation>@Size</annotation>
+                            <min>1</min>
+                            <max>99</max>
+                            <message>Anos de serviço inválido</message>
+                        </validation>
+                        <validation>
+                            <annotation>@Pattern</annotation>
+                            <value>[0-9]+</value>
+                            <message>	Anos de serviço inválido</message>
+                        </validation>
+                    </validations>
+                </anos_de_servico>
+                <ultimo_ano_trabalho_ name="p_ultimo_ano_trabalho_" type="text" maxlength="4" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Ùltimo ano Trabalho </label>
+                    <value>Offi</value>
+                    <rules>
+                        <rule type="remote_combobox">
+                            <proc>listAno</proc>
+                            <requestFields>
+                                <item>p_ultimo_ano_trabalho_</item>
+                            </requestFields>
+                        </rule>
+                    </rules>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                            <message>Último ano de Trabalho é de preenchimento obrigatório</message>
+                        </validation>
+                        <validation>
+                            <annotation>@Size</annotation>
+                            <min>4</min>
+                            <max>4</max>
+                            <message>Último ano de Trabalho inválido</message>
+                        </validation>
+                        <validation>
+                            <annotation>@Pattern</annotation>
+                            <value>[0-9]+</value>
+                            <message>Último ano de Trabalho inválido</message>
+                        </validation>
+                    </validations>
+                </ultimo_ano_trabalho_>
+                <ano_que_deseja_receber_pensao name="p_ano_que_deseja_receber_pensao" type="select" multiple="false" tags="false" domain="" maxlength="4" required="true" change="false" disabled="false" right="false" java-type="">
+                    <label>Ano Que Deseja receber Pensão</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                    <rules>
+                        <rule type="remote_list">
+                            <proc>loadAnos</proc>
+                            <requestFields>
+                                <item>p_tipo_de_pensao</item>
+                                <item>p_ano_que_deseja_receber_pensao</item>
+                            </requestFields>
+                        </rule>
+                    </rules>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                            <message>Ano Que Deseja receber Pensão é de preenchimento obrigatório</message>
+                        </validation>
+                        <validation>
+                            <annotation>@Size</annotation>
+                            <min>4</min>
+                            <max>4</max>
+                            <message>Ano Que Deseja receber Pensão inválido</message>
+                        </validation>
+                        <validation>
+                            <annotation>@Pattern</annotation>
+                            <value>[0-9]+</value>
+                            <message>Ano Que Deseja receber Pensão inválido</message>
+                        </validation>
+                    </validations>
+                </ano_que_deseja_receber_pensao>
+                <hidden name="p_ano_ultimo_vinculo" type="hidden" maxlength="250" java-type="" tag="ano_ultimo_vinculo"/>
+                <hidden name="p_percentagem" type="hidden" maxlength="250" java-type="double" tag="percentagem"/>
+                <hidden name="p_ano_levaremconta" type="hidden" maxlength="250" java-type="int" tag="ano_levaremconta"/>
+                <hidden name="p_nr_maior_salario" type="hidden" maxlength="250" java-type="int" tag="nr_maior_salario"/>
+                <hidden name="p_perc_valor_maximo" type="hidden" maxlength="250" java-type="float" tag="perc_valor_maximo"/>
+                <hidden name="p_valor_minimo" type="hidden" maxlength="250" java-type="double" tag="valor_minimo"/>
+                <hidden name="p_ano_minimo" type="hidden" maxlength="250" java-type="int" tag="ano_minimo"/>
+                <hidden name="p_maximo_ultimo_ano_trab" type="hidden" maxlength="250" java-type="int" tag="maximo_ultimo_ano_trab"/>
+                <hidden name="p_userName" type="hidden" maxlength="250" java-type="String" tag="username"/>
+            </fields>
+        </form_1>
+        <table_info type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <mes_info name="p_mes_info" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false">
+                    <label>Mes</label>
+                </mes_info>
+                <ano_info name="p_ano_info" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false">
+                    <label>Ano</label>
+                </ano_info>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <mes_info name="p_mes_info">Rem perspiciatis labore elit s</mes_info>
+                        <ano_info name="p_ano_info">Laudantium mollit perspiciatis</ano_info>
+                    </row>
+                    <row>
+                        <mes_info name="p_mes_info">Natus dolor elit accusantium u</mes_info>
+                        <ano_info name="p_ano_info">Rem magna voluptatem sed dolor</ano_info>
+                    </row>
+                    <row>
+                        <mes_info name="p_mes_info">Iste accusantium laudantium an</mes_info>
+                        <ano_info name="p_ano_info">Elit totam consectetur stract</ano_info>
+                    </row>
+                    <row>
+                        <mes_info name="p_mes_info">Ipsum laudantium iste adipisci</mes_info>
+                        <ano_info name="p_ano_info">Labore lorem elit aperiam volu</ano_info>
+                    </row>
+                    <row>
+                        <mes_info name="p_mes_info">Adipiscing ipsum officia omnis</mes_info>
+                        <ano_info name="p_ano_info">Accusantium doloremque sit rem</ano_info>
+                    </row>
+                </value>
+            </table>
+        </table_info>
+        <formlist_1 type="formlist" xml-type="formlist" title="Melhores Remunerações dos Últimos Anos" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <ordem name="p_ordem" type="plaintext" maxlength="250" right="false" desc="true">
+                    <label>Ordem</label>
+                </ordem>
+                <ano name="p_ano" type="select" multiple="false" tags="false" domain="" maxlength="4" required="false" change="false" disabled="false" right="false" java-type="" delimiter=";" desc="true">
+                    <label>Ano</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                    <rules>
+                        <rule type="remote">
+                            <proc>coeficiente</proc>
+                            <requestFields>
+                                <item>p_ano</item>
+                            </requestFields>
+                        </rule>
+                    </rules>
+                    <validations>
+                        <validation>
+                            <annotation>@Pattern</annotation>
+                            <value>[0-9]+</value>
+                            <message>Ano inválido</message>
+                        </validation>
+                        <validation>
+                            <annotation>@Size</annotation>
+                            <min>4</min>
+                            <max>4</max>
+                            <message>Ano inválido</message>
+                        </validation>
+                    </validations>
+                </ano>
+                <remuneracao name="p_remuneracao" type="number" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="Insira o total de remuneração anual" desclabel="false" right="false" java-type="Integer" min="" max="" desc="true">
+                    <label>Remunerações Anuais</label>
+                    <validations>
+                        <validation>
+                            <annotation>@PositiveOrZero</annotation>
+                            <message>Remunerações Anuais não pode ser negativo</message>
+                        </validation>
+                    </validations>
+                </remuneracao>
+                <coeficiente name="p_coeficiente" type="plaintext" maxlength="250" right="false" desc="true">
+                    <label>Coeficiente</label>
+                </coeficiente>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <ordem name="p_ordem" desc="true">Accusantium officia aliqua elit labore</ordem>
+                        <ordem_desc name="p_ordem_desc">Accusantium officia aliqua elit labore</ordem_desc>
+                        <ano name="p_ano" desc="true">2</ano>
+                        <ano_desc name="p_ano_desc">2</ano_desc>
+                        <remuneracao name="p_remuneracao" desc="true">178</remuneracao>
+                        <remuneracao_desc name="p_remuneracao_desc">178</remuneracao_desc>
+                        <coeficiente name="p_coeficiente" desc="true">Sit omnis deserunt ut sed</coeficiente>
+                        <coeficiente_desc name="p_coeficiente_desc">Sit omnis deserunt ut sed</coeficiente_desc>
+                    </row>
+                    <row>
+                        <ordem name="p_ordem" desc="true">Labore doloremque sit aperiam anim</ordem>
+                        <ordem_desc name="p_ordem_desc">Labore doloremque sit aperiam anim</ordem_desc>
+                        <ano name="p_ano" desc="true">2</ano>
+                        <ano_desc name="p_ano_desc">2</ano_desc>
+                        <remuneracao name="p_remuneracao" desc="true">248</remuneracao>
+                        <remuneracao_desc name="p_remuneracao_desc">248</remuneracao_desc>
+                        <coeficiente name="p_coeficiente" desc="true">Ut ipsum elit aperiam anim</coeficiente>
+                        <coeficiente_desc name="p_coeficiente_desc">Ut ipsum elit aperiam anim</coeficiente_desc>
+                    </row>
+                    <row>
+                        <ordem name="p_ordem" desc="true">Laudantium magna officia unde magna</ordem>
+                        <ordem_desc name="p_ordem_desc">Laudantium magna officia unde magna</ordem_desc>
+                        <ano name="p_ano" desc="true">2</ano>
+                        <ano_desc name="p_ano_desc">2</ano_desc>
+                        <remuneracao name="p_remuneracao" desc="true">239</remuneracao>
+                        <remuneracao_desc name="p_remuneracao_desc">239</remuneracao_desc>
+                        <coeficiente name="p_coeficiente" desc="true">Voluptatem magna sed labore rem</coeficiente>
+                        <coeficiente_desc name="p_coeficiente_desc">Voluptatem magna sed labore rem</coeficiente_desc>
+                    </row>
+                    <row>
+                        <ordem name="p_ordem" desc="true">Perspiciatis voluptatem stract sed accusantium</ordem>
+                        <ordem_desc name="p_ordem_desc">Perspiciatis voluptatem stract sed accusantium</ordem_desc>
+                        <ano name="p_ano" desc="true">2</ano>
+                        <ano_desc name="p_ano_desc">2</ano_desc>
+                        <remuneracao name="p_remuneracao" desc="true">160</remuneracao>
+                        <remuneracao_desc name="p_remuneracao_desc">160</remuneracao_desc>
+                        <coeficiente name="p_coeficiente" desc="true">Aperiam ut deserunt totam officia</coeficiente>
+                        <coeficiente_desc name="p_coeficiente_desc">Aperiam ut deserunt totam officia</coeficiente_desc>
+                    </row>
+                    <row>
+                        <ordem name="p_ordem" desc="true">Totam aperiam mollit dolor omnis</ordem>
+                        <ordem_desc name="p_ordem_desc">Totam aperiam mollit dolor omnis</ordem_desc>
+                        <ano name="p_ano" desc="true">2</ano>
+                        <ano_desc name="p_ano_desc">2</ano_desc>
+                        <remuneracao name="p_remuneracao" desc="true">103</remuneracao>
+                        <remuneracao_desc name="p_remuneracao_desc">103</remuneracao_desc>
+                        <coeficiente name="p_coeficiente" desc="true">Mollit iste adipiscing accusantium totam</coeficiente>
+                        <coeficiente_desc name="p_coeficiente_desc">Mollit iste adipiscing accusantium totam</coeficiente_desc>
+                    </row>
+                </value>
+            </table>
+        </formlist_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="calcular" custom_return="true">
+                <title>Calcular</title>
+                <app>inps_porton</app>
+                <page>Calculo_pensao</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>warning|fa-calculator</img>
+                <preview>/IGRP/images/IGRP/IGRP2.3/app/inps_porton/calculo_pensao/Calculo_pensao.xml</preview>
+            </item>
+        </toolsbar_1>
+        <form_2 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <valor_da_pensao name="p_valor_da_pensao" type="text" maxlength="250" required="false" change="false" readonly="true" disabled="true" placeholder="" desclabel="false" right="false">
+                    <label>Valor da Pensão</label>
+                    <value>Magna stract iste sed mollit</value>
+                </valor_da_pensao>
+            </fields>
+        </form_2>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

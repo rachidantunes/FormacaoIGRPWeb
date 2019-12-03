@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarperfil/PesquisarPerfil.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2018 - Copyright NOSI v.180723</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>PesquisarPerfil</page>
+    <app>igrp</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.igrp.pages</package_db>
+        <package_html>PesquisarPerfil</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=11</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Gestão de Perfil</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[Gestão de Perfil]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="novo">
+                <title>Novo</title>
+                <app>igrp</app>
+                <page>NovoPerfil</page>
+                <link>index</link>
+                <target>right_panel|refresh</target>
+                <img>success|fa-plus-square</img>
+                <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/novoperfil/NovoPerfil.xml</preview>
+            </item>
+        </toolsbar_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <organica name="p_organica" type="text" maxlength="30" align="left" lookup_parser="false" iskey="false" showLabel="true">
+                    <label>Organização</label>
+                </organica>
+                <estado name="p_estado" type="checkbox" maxlength="30" align="center" lookup_parser="false" iskey="false" switch="false" java-type="int" showLabel="true" check="true" desc="true">
+                    <label>Estado</label>
+                </estado>
+                <descricao name="p_descricao" type="text" maxlength="30" align="left" lookup_parser="false" iskey="false" showLabel="true">
+                    <label>Nome</label>
+                </descricao>
+                <codigo name="p_codigo" type="text" maxlength="30" align="left" lookup_parser="false" iskey="false" showLabel="true">
+                    <label>Código</label>
+                </codigo>
+                <id name="p_id" type="hidden" maxlength="30" iskey="true" java-type="" showLabel="true" tag="id"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <organica name="p_organica">Ut totam magna sit magna</organica>
+                        <estado name="p_estado" check="true" desc="true">1</estado>
+                        <estado_desc name="p_estado_desc">1</estado_desc>
+                        <descricao name="p_descricao">Dolor deserunt anim elit persp</descricao>
+                        <codigo name="p_codigo">Dolor natus sed accusantium do</codigo>
+                        <id name="p_id" tag="id">hidden-930a_57a8</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <organica name="p_organica">Perspiciatis lorem sit magna o</organica>
+                        <estado name="p_estado" check="true" desc="true">1</estado>
+                        <estado_desc name="p_estado_desc">1</estado_desc>
+                        <descricao name="p_descricao">Consectetur stract aliqua labo</descricao>
+                        <codigo name="p_codigo">Unde mollit voluptatem ut dolo</codigo>
+                        <id name="p_id" tag="id">hidden-13bc_bd7d</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <organica name="p_organica">Aliqua officia anim ut dolor</organica>
+                        <estado name="p_estado" check="true" desc="true">1</estado>
+                        <estado_desc name="p_estado_desc">1</estado_desc>
+                        <descricao name="p_descricao">Labore accusantium stract iste</descricao>
+                        <codigo name="p_codigo">Voluptatem aliqua consectetur</codigo>
+                        <id name="p_id" tag="id">hidden-a12d_eaf8</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <organica name="p_organica">Adipiscing natus ipsum labore</organica>
+                        <estado name="p_estado" check="true" desc="true">1</estado>
+                        <estado_desc name="p_estado_desc">1</estado_desc>
+                        <descricao name="p_descricao">Rem totam doloremque adipiscin</descricao>
+                        <codigo name="p_codigo">Stract amet voluptatem sit ist</codigo>
+                        <id name="p_id" tag="id">hidden-1a75_bcf0</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <organica name="p_organica">Amet deserunt dolor unde totam</organica>
+                        <estado name="p_estado" check="true" desc="true">1</estado>
+                        <estado_desc name="p_estado_desc">1</estado_desc>
+                        <descricao name="p_descricao">Laudantium officia sed deserun</descricao>
+                        <codigo name="p_codigo">Officia rem anim magna volupta</codigo>
+                        <id name="p_id" tag="id">hidden-bb09_9d33</id>
+                    </row>
+                </value>
+                <context-menu>
+                    <item type="specific" code="" class="warning" rel="editar" custom_return="true">
+                        <title>Editar</title>
+                        <app>igrp</app>
+                        <page>NovoPerfil</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/novoperfil/NovoPerfil.xml?</parameter>
+                        <target>right_panel|refresh</target>
+                        <img>warning|fa-pencil</img>
+                        <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/novoperfil/NovoPerfil.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="info" rel="menu" custom_return="true">
+                        <title>Menu</title>
+                        <app>igrp</app>
+                        <page>MenuOrganica</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/menuorganica/MenuOrganica.xml?</parameter>
+                        <target>right_panel</target>
+                        <img>info|fa-bars</img>
+                        <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/menuorganica/MenuOrganica.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="black" rel="transacao" custom_return="true">
+                        <title>Transacao</title>
+                        <app>igrp</app>
+                        <page>TransacaoOrganica</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/transacaoorganica/TransacaoOrganica.xml?</parameter>
+                        <target>right_panel</target>
+                        <img>black|fa-exchange</img>
+                        <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/transacaoorganica/TransacaoOrganica.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="primary" rel="associar_etapa" custom_return="true">
+                        <title>Associar Etapa</title>
+                        <app>igrp</app>
+                        <page>PesquisarPerfil</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarperfil/PesquisarPerfil.xml?</parameter>
+                        <target>right_panel</target>
+                        <img>primary|fa-sitemap</img>
+                        <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarperfil/PesquisarPerfil.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="warning" rel="convidar" custom_return="true">
+                        <title>Convidar</title>
+                        <app>igrp</app>
+                        <page>NovoUtilizador</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/novoutilizador/NovoUtilizador.xml?</parameter>
+                        <target>right_panel</target>
+                        <img>warning|fa-send</img>
+                        <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/novoutilizador/NovoUtilizador.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="danger" rel="eliminar">
+                        <title>Eliminar</title>
+                        <app>igrp</app>
+                        <page>PesquisarPerfil</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarperfil/PesquisarPerfil.xml?</parameter>
+                        <target>alert_submit</target>
+                        <img>danger|fa-trash</img>
+                        <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarperfil/PesquisarPerfil.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <hidden name="p_id_app" type="hidden" maxlength="250" java-type="int" tag="id_app"/>
+                <hidden name="p_id_org" type="hidden" maxlength="250" java-type="int" tag="id_org"/>
+            </fields>
+        </form_1>
+    </content>
+</rows>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/imac_solution/file/File.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>File</page>
+    <app>imac_solution</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.imac_solution.pages</package_db>
+        <package_html>File</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=120</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>File</title>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <file1 name="p_file1" type="file" accept="" targetrend="" multiple="true" rendvalue="false" maxlength="250" required="false" disabled="false" right="false" class="primary">
+                    <label>File</label>
+                    <value/>
+                </file1>
+            </fields>
+        </form_1>
+        <formlist_1 type="formlist" xml-type="formlist" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <descricao name="p_descricao" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" desc="true">
+                    <label>Descricao</label>
+                    <validations>
+                        <validation>
+                            <annotation>@Pattern</annotation>
+                            <value>[a-zA-Z]+</value>
+                            <message>Nome Invalido</message>
+                        </validation>
+                    </validations>
+                </descricao>
+                <file2 name="p_file2" type="file" accept="" targetrend="" multiple="false" rendvalue="false" maxlength="250" required="false" disabled="false" right="false" class="primary" desc="true">
+                    <label>File</label>
+                </file2>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Amet dolor totam labore dolor</descricao>
+                        <descricao_desc name="p_descricao_desc">Amet dolor totam labore dolor</descricao_desc>
+                        <file2 name="p_file2" desc="true"/>
+                        <file2_desc name="p_file2_desc"/>
+                    </row>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Lorem ipsum elit voluptatem ipsum</descricao>
+                        <descricao_desc name="p_descricao_desc">Lorem ipsum elit voluptatem ipsum</descricao_desc>
+                        <file2 name="p_file2" desc="true"/>
+                        <file2_desc name="p_file2_desc"/>
+                    </row>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Ipsum ut deserunt lorem sit</descricao>
+                        <descricao_desc name="p_descricao_desc">Ipsum ut deserunt lorem sit</descricao_desc>
+                        <file2 name="p_file2" desc="true"/>
+                        <file2_desc name="p_file2_desc"/>
+                    </row>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Perspiciatis natus lorem adipiscing ut</descricao>
+                        <descricao_desc name="p_descricao_desc">Perspiciatis natus lorem adipiscing ut</descricao_desc>
+                        <file2 name="p_file2" desc="true"/>
+                        <file2_desc name="p_file2_desc"/>
+                    </row>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Doloremque ut perspiciatis laudantium perspiciatis</descricao>
+                        <descricao_desc name="p_descricao_desc">Doloremque ut perspiciatis laudantium perspiciatis</descricao_desc>
+                        <file2 name="p_file2" desc="true"/>
+                        <file2_desc name="p_file2_desc"/>
+                    </row>
+                </value>
+            </table>
+        </formlist_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="save">
+                <title>Save</title>
+                <app>imac_solution</app>
+                <page>File</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>primary|fa-save</img>
+                <preview>/IGRP-Template/images/IGRP/IGRP2.3/app/imac_solution/file/File.xml</preview>
+            </item>
+        </toolsbar_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

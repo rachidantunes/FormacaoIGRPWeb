@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/igrp/gestao_tipo_documento/Gestao_tipo_documento.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2018 - Copyright NOSI v.180723</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Gestao_tipo_documento</page>
+    <app>igrp</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.igrp.pages</package_db>
+        <package_html>Gestao_tipo_documento</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=60</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Gestao Tipo Documento</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[Gestão Tipo de Documento]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="gravar">
+                <title>Gravar</title>
+                <app>igrp</app>
+                <page>Gestao_tipo_documento</page>
+                <link>index</link>
+                <target>submit_form</target>
+                <img>primary|fa-save</img>
+                <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/gestao_tipo_documento/Gestao_tipo_documento.xml</preview>
+            </item>
+        </toolsbar_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <aplicacao name="p_aplicacao" type="select" multiple="false" tags="false" domain="" maxlength="250" required="true" change="true" disabled="false" right="false" java-type="">
+                    <label>Aplicação</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </aplicacao>
+                <ativo name="p_ativo" type="checkbox" maxlength="250" required="false" change="false" readonly="false" disabled="false" right="false" switch="false" java-type="" check="true">
+                    <label>Ativo?</label>
+                    <value>1</value>
+                </ativo>
+                <nada name="p_nada" type="separator" maxlength="250" placeholder="" right="false">
+                    <label></label>
+                </nada>
+                <nome name="p_nome" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" right="false">
+                    <label>Nome</label>
+                    <value>Stract consectetur dolor labore unde</value>
+                </nome>
+                <codigo name="p_codigo" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" right="false">
+                    <label>Codigo</label>
+                    <value>Unde amet rem ut iste</value>
+                </codigo>
+                <descricao name="p_descricao" type="textarea" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" right="false">
+                    <label>Descrição</label>
+                    <value>Natus dolor unde lorem iste labore voluptatem adipiscing aliqua consectetur elit omnis magna deserunt ipsum</value>
+                </descricao>
+            </fields>
+        </form_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <t_estado name="p_t_estado" type="color" format="hex" maxlength="30" align="left" lookup_parser="false" iskey="false">
+                    <label>Estado</label>
+                </t_estado>
+                <t_aplicacao name="p_t_aplicacao" type="text" maxlength="30" align="left" lookup_parser="false" iskey="false">
+                    <label>Aplicação</label>
+                </t_aplicacao>
+                <t_codigo name="p_t_codigo" type="text" maxlength="30" align="left" lookup_parser="false" iskey="false">
+                    <label>Codigo</label>
+                </t_codigo>
+                <t_nome name="p_t_nome" type="text" maxlength="30" align="left" lookup_parser="false" iskey="false">
+                    <label>Nome</label>
+                </t_nome>
+                <t_descricao name="p_t_descricao" type="text" maxlength="30" align="left" lookup_parser="false" iskey="false">
+                    <label>Descrição</label>
+                </t_descricao>
+                <id name="p_id" type="hidden" maxlength="30" iskey="true" java-type="" tag="id"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <t_estado name="p_t_estado">1</t_estado>
+                        <t_aplicacao name="p_t_aplicacao">Elit mollit consectetur lorem</t_aplicacao>
+                        <t_codigo name="p_t_codigo">Officia dolor amet omnis natus</t_codigo>
+                        <t_nome name="p_t_nome">Laudantium ipsum aperiam rem a</t_nome>
+                        <t_descricao name="p_t_descricao">Accusantium dolor natus dolor</t_descricao>
+                        <id name="p_id" tag="id">hidden-9485_5089</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <t_estado name="p_t_estado">1</t_estado>
+                        <t_aplicacao name="p_t_aplicacao">Mollit laudantium unde lorem n</t_aplicacao>
+                        <t_codigo name="p_t_codigo">Omnis doloremque ut ipsum magn</t_codigo>
+                        <t_nome name="p_t_nome">Officia sit consectetur anim d</t_nome>
+                        <t_descricao name="p_t_descricao">Adipiscing aperiam natus offic</t_descricao>
+                        <id name="p_id" tag="id">hidden-e186_b010</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <t_estado name="p_t_estado">1</t_estado>
+                        <t_aplicacao name="p_t_aplicacao">Anim adipiscing ipsum sit lore</t_aplicacao>
+                        <t_codigo name="p_t_codigo">Unde doloremque rem officia re</t_codigo>
+                        <t_nome name="p_t_nome">Dolor sed mollit aperiam dolor</t_nome>
+                        <t_descricao name="p_t_descricao">Perspiciatis elit perspiciatis</t_descricao>
+                        <id name="p_id" tag="id">hidden-5c59_b7cd</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <t_estado name="p_t_estado">1</t_estado>
+                        <t_aplicacao name="p_t_aplicacao">Sit officia elit officia amet</t_aplicacao>
+                        <t_codigo name="p_t_codigo">Ipsum officia magna sed mollit</t_codigo>
+                        <t_nome name="p_t_nome">Unde sit anim totam sed</t_nome>
+                        <t_descricao name="p_t_descricao">Accusantium stract iste volupt</t_descricao>
+                        <id name="p_id" tag="id">hidden-0dd2_5b70</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <t_estado name="p_t_estado">2</t_estado>
+                        <t_aplicacao name="p_t_aplicacao">Anim elit omnis ipsum aliqua</t_aplicacao>
+                        <t_codigo name="p_t_codigo">Adipiscing doloremque iste sit</t_codigo>
+                        <t_nome name="p_t_nome">Lorem perspiciatis dolor dolor</t_nome>
+                        <t_descricao name="p_t_descricao">Omnis rem adipiscing ut lorem</t_descricao>
+                        <id name="p_id" tag="id">hidden-abd5_a3de</id>
+                    </row>
+                </value>
+                <legend_color>
+                    <item>
+                        <label>Ativo</label>
+                        <value>1</value>
+                        <color>#37dc2b</color>
+                    </item>
+                    <item>
+                        <label>Desativo</label>
+                        <value>2</value>
+                        <color>#ff0025</color>
+                    </item>
+                </legend_color>
+                <context-menu>
+                    <item type="specific" code="" class="warning" rel="editar">
+                        <title>Editar</title>
+                        <app>igrp</app>
+                        <page>Gestao_tipo_documento</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/gestao_tipo_documento/Gestao_tipo_documento.xml?</parameter>
+                        <target>mpsubmit|refresh</target>
+                        <img>warning|fa-pencil</img>
+                        <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/gestao_tipo_documento/Gestao_tipo_documento.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="danger" rel="eliminar">
+                        <title>Eliminar</title>
+                        <app>igrp</app>
+                        <page>Gestao_tipo_documento</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/gestao_tipo_documento/Gestao_tipo_documento.xml?</parameter>
+                        <target>alert_submit</target>
+                        <img>danger|fa-trash</img>
+                        <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/gestao_tipo_documento/Gestao_tipo_documento.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+</rows>

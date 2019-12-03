@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_veiculo/pedido/Pedido.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Pedido</page>
+    <app>gestao_veiculo</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_veiculo.pages</package_db>
+        <package_html>Pedido</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=110</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Pedido</title>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <justificacao name="p_justificacao" type="textarea" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Justificação</label>
+                    <value>Stract adipiscing iste mollit labore mollit aliqua ipsum aperiam aliqua rem adipiscing accusantium rem magna</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </justificacao>
+            </fields>
+        </form_1>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p>Pedido Compra</p>
+]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <formlist_1 type="formlist" xml-type="formlist" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <descricao name="p_descricao" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" desc="true">
+                    <label>Descrição</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </descricao>
+                <quantidade name="p_quantidade" type="number" min="" max="" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="" total_col="false" total_row="false" totalrow="false" desc="true">
+                    <label>Quantidade</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </quantidade>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Magna laudantium adipiscing sit amet</descricao>
+                        <descricao_desc name="p_descricao_desc">Magna laudantium adipiscing sit amet</descricao_desc>
+                        <quantidade name="p_quantidade" desc="true">149</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">149</quantidade_desc>
+                    </row>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Adipiscing perspiciatis consectetur ipsum sit</descricao>
+                        <descricao_desc name="p_descricao_desc">Adipiscing perspiciatis consectetur ipsum sit</descricao_desc>
+                        <quantidade name="p_quantidade" desc="true">144</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">144</quantidade_desc>
+                    </row>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Lorem rem dolor officia sed</descricao>
+                        <descricao_desc name="p_descricao_desc">Lorem rem dolor officia sed</descricao_desc>
+                        <quantidade name="p_quantidade" desc="true">123</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">123</quantidade_desc>
+                    </row>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Amet adipiscing natus ut lorem</descricao>
+                        <descricao_desc name="p_descricao_desc">Amet adipiscing natus ut lorem</descricao_desc>
+                        <quantidade name="p_quantidade" desc="true">227</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">227</quantidade_desc>
+                    </row>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Deserunt anim ipsum mollit perspiciatis</descricao>
+                        <descricao_desc name="p_descricao_desc">Deserunt anim ipsum mollit perspiciatis</descricao_desc>
+                        <quantidade name="p_quantidade" desc="true">123</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">123</quantidade_desc>
+                    </row>
+                </value>
+            </table>
+        </formlist_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

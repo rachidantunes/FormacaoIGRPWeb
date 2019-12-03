@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/igrp/lookuplistuser/LookupListUser.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2018 - Copyright NOSI v.180723</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>LookupListUser</page>
+    <app>igrp</app>
+    <plsql>
+        <action>index</action>
+        <package_instance>null</package_instance>
+        <package_db>nosi.webapps.igrp.pages</package_db>
+        <package_html>LookupListUser</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=31</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Lookup Lista Utilizador</title>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <email name="p_email" type="email" maxlength="30" required="false" change="false" readonly="false" disabled="false" placeholder="" right="false">
+                    <label>Email</label>
+                    <value>sosnicag@example.com</value>
+                </email>
+                <login name="p_login" type="text" maxlength="30" required="false" change="false" readonly="false" disabled="false" placeholder="" right="false">
+                    <label>Login</label>
+                    <value>Aperiam laudantium sit aperiam</value>
+                </login>
+                <nome name="p_nome" type="text" maxlength="30" required="false" change="false" readonly="false" disabled="false" placeholder="" right="false">
+                    <label>Nome</label>
+                    <value>Sed elit consectetur deserunt</value>
+                </nome>
+            </fields>
+            <tools-bar>
+                <item type="form" code="" class="primary" rel="pesquisar">
+                    <title>Pesquisar</title>
+                    <app/>
+                    <page/>
+                    <link/>
+                    <parameter>undefined?</parameter>
+                    <target>submit</target>
+                    <img>primary|fa-search</img>
+                </item>
+            </tools-bar>
+        </form_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <email_1 name="p_email_1" type="email" maxlength="30" align="left" lookup_parser="true" iskey="false">
+                    <label>Email</label>
+                </email_1>
+                <login_1 name="p_login_1" type="text" maxlength="30" align="left" lookup_parser="true" iskey="false">
+                    <label>Login</label>
+                </login_1>
+                <nome_1 name="p_nome_1" type="text" maxlength="30" align="left" lookup_parser="true" iskey="false">
+                    <label>Nome</label>
+                </nome_1>
+                <id name="p_id" type="hidden" maxlength="30" iskey="false" tag="id"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <email_1 name="p_email_1">ujwa@example.com</email_1>
+                        <login_1 name="p_login_1">Stract perspiciatis voluptatem</login_1>
+                        <nome_1 name="p_nome_1">Natus sed sit elit dolor</nome_1>
+                        <id name="p_id" tag="id">1</id>
+                    </row>
+                    <row>
+                        <email_1 name="p_email_1">niciz@example.com</email_1>
+                        <login_1 name="p_login_1">Consectetur dolor aperiam ut i</login_1>
+                        <nome_1 name="p_nome_1">Dolor omnis accusantium sit re</nome_1>
+                        <id name="p_id" tag="id">1</id>
+                    </row>
+                    <row>
+                        <email_1 name="p_email_1">onzuvid@example.com</email_1>
+                        <login_1 name="p_login_1">Stract iste labore elit sit</login_1>
+                        <nome_1 name="p_nome_1">Sit sit magna sit aliqua</nome_1>
+                        <id name="p_id" tag="id">1</id>
+                    </row>
+                    <row>
+                        <email_1 name="p_email_1">viijofev@example.com</email_1>
+                        <login_1 name="p_login_1">Mollit aperiam rem omnis elit</login_1>
+                        <nome_1 name="p_nome_1">Deserunt consectetur voluptate</nome_1>
+                        <id name="p_id" tag="id">1</id>
+                    </row>
+                    <row>
+                        <email_1 name="p_email_1">nolgik@example.com</email_1>
+                        <login_1 name="p_login_1">Sit deserunt ipsum lorem sit</login_1>
+                        <nome_1 name="p_nome_1">Lorem rem natus elit lorem</nome_1>
+                        <id name="p_id" tag="id">1</id>
+                    </row>
+                </value>
+            </table>
+        </table_1>
+    </content>
+</rows>

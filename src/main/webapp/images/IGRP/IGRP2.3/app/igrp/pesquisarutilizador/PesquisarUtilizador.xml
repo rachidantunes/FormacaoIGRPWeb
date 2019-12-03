@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarutilizador/PesquisarUtilizador.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2018 - Copyright NOSI v.180723</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>PesquisarUtilizador</page>
+    <app>igrp</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.igrp.pages</package_db>
+        <package_html>PesquisarUtilizador</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=12</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Gestão de Utilizador</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[Gestão de utilizador]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <form_1 type="form" xml-type="form" title="Filtro" gen-type="container" gen-group="">
+            <fields>
+                <username name="p_username" type="text" maxlength="50" required="false" change="false" readonly="false" disabled="false" placeholder="" right="false" desclabel="false">
+                    <label>Username</label>
+                    <value>Sed lorem sed officia laudantium</value>
+                </username>
+                <email name="p_email" type="email" maxlength="100" required="false" change="false" readonly="false" disabled="false" placeholder="" right="false" desclabel="false">
+                    <label>Email</label>
+                    <value>ukumos@example.com</value>
+                </email>
+                <nada name="p_nada" type="separator" maxlength="30" placeholder="" right="false" desclabel="false">
+                    <label></label>
+                </nada>
+                <aplicacao name="p_aplicacao" type="select" multiple="false" maxlength="50" required="false" change="false" disabled="false" right="false" domain="" java-type="" tags="false">
+                    <label>Aplicação</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                    <rules>
+                        <rule type="remote_combobox">
+                            <proc>index</proc>
+                            <requestFields>
+                                <item>p_aplicacao</item>
+                            </requestFields>
+                        </rule>
+                    </rules>
+                </aplicacao>
+                <organica name="p_organica" type="select" multiple="false" maxlength="100" required="false" change="false" disabled="false" right="false" domain="" java-type="" tags="false">
+                    <label>Orgânica</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                    <rules>
+                        <rule type="remote_combobox">
+                            <proc>index</proc>
+                            <requestFields>
+                                <item>p_aplicacao</item>
+                                <item>p_organica</item>
+                            </requestFields>
+                        </rule>
+                    </rules>
+                </organica>
+                <perfil name="p_perfil" type="select" multiple="false" maxlength="50" required="false" change="false" disabled="false" right="false" domain="" java-type="" tags="false">
+                    <label>Perfil</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                    <rules/>
+                </perfil>
+            </fields>
+            <tools-bar>
+                <item type="form" code="" class="primary" rel="pesquisar" custom_return="true">
+                    <title>Pesquisar</title>
+                    <app>igrp</app>
+                    <page>PesquisarUtilizador</page>
+                    <link>index</link>
+                    <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarutilizador/PesquisarUtilizador.xml?</parameter>
+                    <target>submit</target>
+                    <img>primary|fa-search</img>
+                    <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarutilizador/PesquisarUtilizador.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="convidar">
+                <title>Convidar</title>
+                <app>igrp</app>
+                <page>NovoUtilizador</page>
+                <link>index</link>
+                <target>right_panel_submit|refresh</target>
+                <img>warning|fa-send</img>
+                <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/novoutilizador/NovoUtilizador.xml</preview>
+            </item>
+            <item type="specific" code="" rel="adicionar_utilizador">
+                <title>Adicionar Utilizador</title>
+                <app>igrp</app>
+                <page>RegistarUtilizador</page>
+                <link>index</link>
+                <target>right_panel_submit</target>
+                <img>success|fa-plus-square</img>
+                <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/registarutilizador/RegistarUtilizador.xml</preview>
+            </item>
+        </toolsbar_1>
+        <table_1 type="table" xml-type="table" title="Utilizadores" gen-type="container" gen-group="true">
+            <fields>
+                <ativo name="p_ativo" type="checkbox" maxlength="30" align="center" lookup_parser="false" iskey="false" switch="true" java-type="int" showLabel="true" check="true" desc="true">
+                    <label>Ativo?</label>
+                    <rules>
+                        <rule type="remote">
+                            <proc>changeStatus</proc>
+                            <requestFields>
+                                <item>p_ativo</item>
+                                <item>p_tb_email</item>
+                                <item>p_id</item>
+                            </requestFields>
+                        </rule>
+                    </rules>
+                </ativo>
+                <nominho name="p_nominho" type="plaintext" maxlength="50" align="left" lookup_parser="false" iskey="false" showLabel="true">
+                    <label>Nome</label>
+                </nominho>
+                <range_1 name="p_range_1" type="range" rangeMin="0" rangeMax="100" maxlength="30" align="left" lookup_parser="false" iskey="false" showLabel="true">
+                    <label>Range</label>
+                </range_1>
+                <nome name="p_nome" type="plaintext" maxlength="100" align="left" lookup_parser="false" iskey="true" showLabel="true">
+                    <label>Username</label>
+                </nome>
+                <tb_email name="p_tb_email" type="plaintext" maxlength="100" align="left" lookup_parser="false" iskey="true" showLabel="true">
+                    <label>Email</label>
+                </tb_email>
+                <perfile name="p_perfile" type="plaintext" maxlength="50" align="left" lookup_parser="false" iskey="false" showLabel="true">
+                    <label>App/Org/Perfil</label>
+                </perfile>
+                <id name="p_id" type="hidden" maxlength="30" iskey="true" java-type="" showLabel="true" tag="id"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <ativo name="p_ativo" check="true" desc="true">1</ativo>
+                        <ativo_desc name="p_ativo_desc">1</ativo_desc>
+                        <nominho name="p_nominho">Ipsum magna accusantium amet doloremque labore ist</nominho>
+                        <range_1 name="p_range_1">8</range_1>
+                        <nome name="p_nome">Magna unde elit mollit lorem ipsum labore aperiam sit doloremque ipsum labore officia mollit accusan</nome>
+                        <tb_email name="p_tb_email">Magna officia dolor elit omnis dolor totam dolor ipsum doloremque elit adipiscing accusantium ut dol</tb_email>
+                        <perfile name="p_perfile">Aperiam anim deserunt amet sit accusantium mollit</perfile>
+                        <id name="p_id" tag="id">hidden-3f9d_8bcd</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <ativo name="p_ativo" check="true" desc="true">1</ativo>
+                        <ativo_desc name="p_ativo_desc">1</ativo_desc>
+                        <nominho name="p_nominho">Iste amet natus labore adipiscing voluptatem sit p</nominho>
+                        <range_1 name="p_range_1">4</range_1>
+                        <nome name="p_nome">Amet consectetur dolor omnis sed dolor doloremque sed sit laudantium unde voluptatem officia ut dese</nome>
+                        <tb_email name="p_tb_email">Mollit natus lorem anim unde laudantium adipiscing sit omnis voluptatem officia anim ut doloremque a</tb_email>
+                        <perfile name="p_perfile">Iste perspiciatis sit consectetur totam laudantium</perfile>
+                        <id name="p_id" tag="id">hidden-2814_379f</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <ativo name="p_ativo" check="true" desc="true">1</ativo>
+                        <ativo_desc name="p_ativo_desc">1</ativo_desc>
+                        <nominho name="p_nominho">Aperiam officia doloremque anim mollit aperiam des</nominho>
+                        <range_1 name="p_range_1">1</range_1>
+                        <nome name="p_nome">Laudantium iste rem adipiscing ut aperiam unde natus consectetur mollit sed ut doloremque ut lorem l</nome>
+                        <tb_email name="p_tb_email">Adipiscing iste unde sit magna voluptatem aliqua totam omnis natus aperiam amet ipsum sed mollit lor</tb_email>
+                        <perfile name="p_perfile">Rem omnis dolor officia stract perspiciatis elit i</perfile>
+                        <id name="p_id" tag="id">hidden-2dfb_14f7</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <ativo name="p_ativo" check="true" desc="true">1</ativo>
+                        <ativo_desc name="p_ativo_desc">1</ativo_desc>
+                        <nominho name="p_nominho">Ipsum laudantium unde rem deserunt unde labore ape</nominho>
+                        <range_1 name="p_range_1">9</range_1>
+                        <nome name="p_nome">Magna officia unde voluptatem consectetur magna aliqua sit magna stract deserunt laudantium voluptat</nome>
+                        <tb_email name="p_tb_email">Amet adipiscing dolor consectetur deserunt labore anim adipiscing elit lorem magna aliqua natus ipsu</tb_email>
+                        <perfile name="p_perfile">Mollit consectetur dolor unde magna ipsum ut offic</perfile>
+                        <id name="p_id" tag="id">hidden-e20e_3b39</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <ativo name="p_ativo" check="true" desc="true">1</ativo>
+                        <ativo_desc name="p_ativo_desc">1</ativo_desc>
+                        <nominho name="p_nominho">Accusantium sit sed laudantium unde lorem accusant</nominho>
+                        <range_1 name="p_range_1">9</range_1>
+                        <nome name="p_nome">Laudantium sit doloremque accusantium stract sit mollit ut natus sit accusantium ipsum officia persp</nome>
+                        <tb_email name="p_tb_email">Officia mollit ipsum sit ut mollit laudantium totam mollit sed aliqua magna amet sit ipsum magna sed</tb_email>
+                        <perfile name="p_perfile">Officia elit magna voluptatem amet sed adipiscing</perfile>
+                        <id name="p_id" tag="id">hidden-238a_734e</id>
+                    </row>
+                </value>
+                <context-menu>
+                    <item type="specific" code="" class="warning" rel="editar">
+                        <title>Editar</title>
+                        <app>igrp</app>
+                        <page>RegistarUtilizador</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/registarutilizador/RegistarUtilizador.xml?</parameter>
+                        <target>mpsubmit|refresh</target>
+                        <img>warning|fa-pencil</img>
+                        <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/registarutilizador/RegistarUtilizador.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="info" rel="assiocar_menu" custom_return="true">
+                        <title>Assiocar Menu</title>
+                        <app>igrp</app>
+                        <page>PesquisarUtilizador</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarutilizador/PesquisarUtilizador.xml?</parameter>
+                        <target>right_panel_submit</target>
+                        <img>info|fa-bars</img>
+                        <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarutilizador/PesquisarUtilizador.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="black" rel="assiocar_transacao" custom_return="true">
+                        <title>Assiocar Transacao</title>
+                        <app>igrp</app>
+                        <page>PesquisarUtilizador</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarutilizador/PesquisarUtilizador.xml?</parameter>
+                        <target>right_panel</target>
+                        <img>black|fa-exchange</img>
+                        <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarutilizador/PesquisarUtilizador.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="primary" rel="assiocar_etapa" custom_return="true">
+                        <title>Assiocar Etapa</title>
+                        <app>igrp</app>
+                        <page>PesquisarUtilizador</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarutilizador/PesquisarUtilizador.xml?</parameter>
+                        <target>right_panel</target>
+                        <img>primary|fa-sitemap</img>
+                        <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarutilizador/PesquisarUtilizador.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="warning" rel="convidar_user" custom_return="true">
+                        <title>Convidar</title>
+                        <app>igrp</app>
+                        <page>NovoUtilizador</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/novoutilizador/NovoUtilizador.xml?</parameter>
+                        <target>right_panel|refresh</target>
+                        <img>warning|fa-send</img>
+                        <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/novoutilizador/NovoUtilizador.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="danger" rel="eliminar" custom_return="true">
+                        <title>Eliminar</title>
+                        <app>igrp</app>
+                        <page>PesquisarUtilizador</page>
+                        <link>index</link>
+                        <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarutilizador/PesquisarUtilizador.xml?</parameter>
+                        <target>alert_submit</target>
+                        <img>danger|fa-trash</img>
+                        <preview>/IGRP/images/IGRP/IGRP2.3/app/igrp/pesquisarutilizador/PesquisarUtilizador.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+</rows>

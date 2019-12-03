@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_veiculo/dashboard/Dashboard.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Dashboard</page>
+    <app>gestao_veiculo</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_veiculo.pages</package_db>
+        <package_html>Dashboard</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=80</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Dashboard</title>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <data_saida name="p_data_saida" type="date" range="false" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" class="primary">
+                    <label>Data saida</label>
+                    <value>03-02-2016</value>
+                </data_saida>
+            </fields>
+            <tools-bar>
+                <item type="form" code="" class="primary" rel="report" custom_return="true">
+                    <title>Report</title>
+                    <app>gestao_veiculo</app>
+                    <page>Registar_movimento</page>
+                    <link>index</link>
+                    <parameter>/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_veiculo/registar_movimento/Registar_movimento.xml?</parameter>
+                    <target>modal</target>
+                    <img>primary|fa-file-pdf-o</img>
+                    <preview>/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_veiculo/registar_movimento/Registar_movimento.xml</preview>
+                </item>
+                <item type="form" code="" class="primary" rel="button_1" custom_return="true">
+                    <title>Pesquisar</title>
+                    <app>gestao_veiculo</app>
+                    <page>Registar_movimento</page>
+                    <link>index</link>
+                    <parameter>/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_veiculo/registar_movimento/Registar_movimento.xml?</parameter>
+                    <target>submit_form</target>
+                    <img>primary|fa-search</img>
+                    <preview>/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_veiculo/registar_movimento/Registar_movimento.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+        <chart_evolucao type="chart" xml-type="chart" title="Evolucao de movimento" gen-type="container" gen-group="">
+            <caption/>
+            <chart_type>line</chart_type>
+            <xaxys>Eixo de X</xaxys>
+            <yaxys>Eixo de Y</yaxys>
+            <url>#</url>
+            <label>
+                <col>Ano</col>
+                <col>X1</col>
+                <col>X2</col>
+                <col>X3</col>
+                <col>X4</col>
+            </label>
+            <value>
+                <row>
+                    <col>2010</col>
+                    <col>523</col>
+                    <col>952</col>
+                    <col>167</col>
+                    <col>784</col>
+                </row>
+                <row>
+                    <col>2009</col>
+                    <col>888</col>
+                    <col>704</col>
+                    <col>968</col>
+                    <col>894</col>
+                </row>
+                <row>
+                    <col>2015</col>
+                    <col>1010</col>
+                    <col>407</col>
+                    <col>206</col>
+                    <col>428</col>
+                </row>
+            </value>
+            <colors>
+                <col>#133ff6</col>
+                <col>#ad1993</col>
+                <col>#27f804</col>
+                <col>#58239c</col>
+            </colors>
+        </chart_evolucao>
+        <chart_saida_veiculo type="chart" xml-type="chart" title="Saida/Veiculo" gen-type="container" gen-group="">
+            <caption/>
+            <chart_type>pie</chart_type>
+            <xaxys>Eixo de X</xaxys>
+            <yaxys>Eixo de Y</yaxys>
+            <url>#</url>
+            <label>
+                <col>Ano</col>
+                <col>X1</col>
+                <col>X2</col>
+                <col>X3</col>
+                <col>X4</col>
+            </label>
+            <value>
+                <row>
+                    <col>2010</col>
+                    <col>234</col>
+                    <col>40</col>
+                    <col>536</col>
+                    <col>126</col>
+                </row>
+                <row>
+                    <col>2009</col>
+                    <col>837</col>
+                    <col>393</col>
+                    <col>928</col>
+                    <col>149</col>
+                </row>
+                <row>
+                    <col>2015</col>
+                    <col>1010</col>
+                    <col>789</col>
+                    <col>206</col>
+                    <col>431</col>
+                </row>
+            </value>
+            <colors>
+                <col>#ed7be3</col>
+                <col>#25aef0</col>
+                <col>#91817c</col>
+                <col>#f05aef</col>
+            </colors>
+        </chart_saida_veiculo>
+        <char_saida_condutor type="chart" xml-type="chart" title="Condutor com mais saidas" gen-type="container" gen-group="">
+            <caption/>
+            <chart_type>column</chart_type>
+            <xaxys>Eixo de X</xaxys>
+            <yaxys>Eixo de Y</yaxys>
+            <url>#</url>
+            <label>
+                <col>Ano</col>
+                <col>X1</col>
+                <col>X2</col>
+                <col>X3</col>
+                <col>X4</col>
+            </label>
+            <value>
+                <row>
+                    <col>2010</col>
+                    <col>218</col>
+                    <col>287</col>
+                    <col>699</col>
+                    <col>108</col>
+                </row>
+                <row>
+                    <col>2009</col>
+                    <col>873</col>
+                    <col>945</col>
+                    <col>677</col>
+                    <col>638</col>
+                </row>
+                <row>
+                    <col>2015</col>
+                    <col>1010</col>
+                    <col>984</col>
+                    <col>586</col>
+                    <col>677</col>
+                </row>
+            </value>
+            <colors>
+                <col>#d48c2b</col>
+                <col>#19f0c0</col>
+                <col>#4c2946</col>
+                <col>#7a8286</col>
+            </colors>
+        </char_saida_condutor>
+        <total_carro_rua type="circlestatbox" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <total_carro_rua_title name="p_total_carro_rua_title" type="text" maxlength="4000">
+                    <label>Circle Box Title</label>
+                    <value>Total de carro na rua</value>
+                </total_carro_rua_title>
+                <total_carro_rua_lbl name="p_total_carro_rua_lbl" type="text" maxlength="4000">
+                    <label>Percent Text</label>
+                    <value>percent</value>
+                </total_carro_rua_lbl>
+                <total_carro_rua_val name="p_total_carro_rua_val" type="text" maxlength="4000">
+                    <label>Percent Value</label>
+                    <value>98.4</value>
+                </total_carro_rua_val>
+                <total_carro_rua_desc name="p_total_carro_rua_desc" type="text" maxlength="4000">
+                    <label>Description</label>
+                    <value>Detalhes</value>
+                </total_carro_rua_desc>
+                <total_carro_rua_url name="p_total_carro_rua_url" type="text" maxlength="4000">
+                    <label>Link</label>
+                    <value/>
+                </total_carro_rua_url>
+                <total_carro_rua_bg name="p_total_carro_rua_bg" type="text" maxlength="4000">
+                    <label>Background</label>
+                    <value>cp-cyan</value>
+                </total_carro_rua_bg>
+            </fields>
+        </total_carro_rua>
+        <total_condutor_rua type="quickbuttonbox" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <total_condutor_rua_title name="p_total_condutor_rua_title" type="text" maxlength="4000" persist="true">
+                    <label>Title</label>
+                    <value>Total condutor na rua</value>
+                </total_condutor_rua_title>
+                <total_condutor_rua_val name="p_total_condutor_rua_val" type="text" maxlength="4000">
+                    <label>Value</label>
+                    <value>337</value>
+                </total_condutor_rua_val>
+                <total_condutor_rua_url name="p_total_condutor_rua_url" type="link" maxlength="4000" persist="true">
+                    <label/>
+                    <value type="action">
+                        <app>gestao_veiculo</app>
+                        <page>Registar_movimento</page>
+                        <action>index</action>
+                    </value>
+                </total_condutor_rua_url>
+                <total_condutor_rua_bg name="p_total_condutor_rua_bg" type="text" maxlength="4000" persist="true">
+                    <label>Background</label>
+                    <value>cp-cyan</value>
+                </total_condutor_rua_bg>
+                <total_condutor_rua_icn name="p_total_condutor_rua_icn" type="text" maxlength="4000" persist="true">
+                    <label>Icon</label>
+                    <value>fa-check</value>
+                </total_condutor_rua_icn>
+            </fields>
+        </total_condutor_rua>
+        <total_condutor type="smallbox" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <total_condutor_title name="p_total_condutor_title" type="text" maxlength="4000">
+                    <label>Small Box Title</label>
+                    <value>Total condutor</value>
+                </total_condutor_title>
+                <total_condutor_val name="p_total_condutor_val" type="text" maxlength="4000">
+                    <label>Value</label>
+                    <value>211</value>
+                </total_condutor_val>
+                <total_condutor_url name="p_total_condutor_url" type="text" maxlength="4000">
+                    <label>Url</label>
+                    <value>http://www.example.com</value>
+                </total_condutor_url>
+                <total_condutor_lbl name="p_total_condutor_lbl" type="text" maxlength="4000">
+                    <label>Url label</label>
+                    <value>View Details</value>
+                </total_condutor_lbl>
+                <total_condutor_bg name="p_total_condutor_bg" type="text" maxlength="4000">
+                    <label>Background</label>
+                    <value>cp-cyan</value>
+                </total_condutor_bg>
+                <total_condutor_icn name="p_total_condutor_icn" type="text" maxlength="4000">
+                    <label>Icon</label>
+                    <value>fa-check</value>
+                </total_condutor_icn>
+            </fields>
+        </total_condutor>
+        <veiculos_km_50 type="statbox" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <veiculos_km_50_title name="p_veiculos_km_50_title" type="text" maxlength="4000">
+                    <label>Box Title</label>
+                    <value>Veiculos com KM &gt; 50.000</value>
+                </veiculos_km_50_title>
+                <veiculos_km_50_val name="p_veiculos_km_50_val" type="text" maxlength="4000">
+                    <label>Value</label>
+                    <value>926</value>
+                </veiculos_km_50_val>
+                <veiculos_km_50_txt name="p_veiculos_km_50_txt" type="text" maxlength="4000">
+                    <label>Url Text</label>
+                    <value>Read More...</value>
+                </veiculos_km_50_txt>
+                <veiculos_km_50_url name="p_veiculos_km_50_url" type="text" maxlength="4000">
+                    <label>Url</label>
+                    <value>http://www.example.com</value>
+                </veiculos_km_50_url>
+                <veiculos_km_50_bg name="p_veiculos_km_50_bg" type="text" maxlength="4000">
+                    <label>Background</label>
+                    <value>cp-cyan</value>
+                </veiculos_km_50_bg>
+                <veiculos_km_50_icn name="p_veiculos_km_50_icn" type="text" maxlength="4000" persist="true">
+                    <label>Icon</label>
+                    <value>fa-check</value>
+                </veiculos_km_50_icn>
+            </fields>
+        </veiculos_km_50>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

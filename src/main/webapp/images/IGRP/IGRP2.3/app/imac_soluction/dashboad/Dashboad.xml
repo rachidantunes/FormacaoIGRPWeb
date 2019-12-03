@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/imac_soluction/dashboad/Dashboad.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Dashboad</page>
+    <app>imac_soluction</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.imac_soluction.pages</package_db>
+        <package_html>Dashboad</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=151</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Dashboad</title>
+        <line type="chart" xml-type="chart" title="Chart Line" gen-type="container" gen-group="">
+            <caption/>
+            <chart_type>line</chart_type>
+            <xaxys>Eixo de X</xaxys>
+            <yaxys>Eixo de Y</yaxys>
+            <url>#</url>
+            <label>
+                <col>Ano</col>
+                <col>X1</col>
+                <col>X2</col>
+                <col>X3</col>
+                <col>X4</col>
+            </label>
+            <value>
+                <row>
+                    <col>2010</col>
+                    <col>48</col>
+                    <col>900</col>
+                    <col>374</col>
+                    <col>669</col>
+                </row>
+                <row>
+                    <col>2009</col>
+                    <col>348</col>
+                    <col>419</col>
+                    <col>207</col>
+                    <col>169</col>
+                </row>
+                <row>
+                    <col>2015</col>
+                    <col>1010</col>
+                    <col>749</col>
+                    <col>147</col>
+                    <col>944</col>
+                </row>
+            </value>
+            <colors>
+                <col>#ebd2b9</col>
+                <col>#86565c</col>
+                <col>#5ad4cb</col>
+                <col>#4e584e</col>
+            </colors>
+        </line>
+        <pie type="chart" xml-type="chart" title="Chart Pie" gen-type="container" gen-group="">
+            <caption/>
+            <chart_type>pie</chart_type>
+            <xaxys>Eixo de X</xaxys>
+            <yaxys>Eixo de Y</yaxys>
+            <url>#</url>
+            <label>
+                <col>Ano</col>
+                <col>X1</col>
+                <col>X2</col>
+                <col>X3</col>
+                <col>X4</col>
+            </label>
+            <value>
+                <row>
+                    <col>2010</col>
+                    <col>922</col>
+                    <col>678</col>
+                    <col>711</col>
+                    <col>891</col>
+                </row>
+                <row>
+                    <col>2009</col>
+                    <col>66</col>
+                    <col>268</col>
+                    <col>949</col>
+                    <col>882</col>
+                </row>
+                <row>
+                    <col>2015</col>
+                    <col>1010</col>
+                    <col>322</col>
+                    <col>590</col>
+                    <col>534</col>
+                </row>
+            </value>
+            <colors>
+                <col>#24eeb7</col>
+                <col>#a77c80</col>
+                <col>#27ca13</col>
+                <col>#f5eeed</col>
+            </colors>
+        </pie>
+        <column type="chart" xml-type="chart" title="Chart Column" gen-type="container" gen-group="">
+            <caption/>
+            <chart_type>column</chart_type>
+            <xaxys>Eixo de X</xaxys>
+            <yaxys>Eixo de Y</yaxys>
+            <url>#</url>
+            <label>
+                <col>Ano</col>
+                <col>X1</col>
+                <col>X2</col>
+                <col>X3</col>
+                <col>X4</col>
+            </label>
+            <value>
+                <row>
+                    <col>2010</col>
+                    <col>756</col>
+                    <col>628</col>
+                    <col>10</col>
+                    <col>231</col>
+                </row>
+                <row>
+                    <col>2009</col>
+                    <col>720</col>
+                    <col>53</col>
+                    <col>891</col>
+                    <col>864</col>
+                </row>
+                <row>
+                    <col>2015</col>
+                    <col>1010</col>
+                    <col>933</col>
+                    <col>544</col>
+                    <col>664</col>
+                </row>
+            </value>
+            <colors>
+                <col>#fe9887</col>
+                <col>#0c6fa2</col>
+                <col>#b325ae</col>
+                <col>#4c4f5d</col>
+            </colors>
+        </column>
+        <circlestatbox_1 type="circlestatbox" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <circlestatbox_1_title name="p_circlestatbox_1_title" type="text" maxlength="4000">
+                    <label>Circle Box Title</label>
+                    <value>Circle Box Title</value>
+                </circlestatbox_1_title>
+                <circlestatbox_1_lbl name="p_circlestatbox_1_lbl" type="text" maxlength="4000">
+                    <label>Percent Text</label>
+                    <value>percent</value>
+                </circlestatbox_1_lbl>
+                <circlestatbox_1_val name="p_circlestatbox_1_val" type="text" maxlength="4000">
+                    <label>Percent Value</label>
+                    <value>12.7</value>
+                </circlestatbox_1_val>
+                <circlestatbox_1_desc name="p_circlestatbox_1_desc" type="text" maxlength="4000">
+                    <label>Description</label>
+                    <value>Some Text Here</value>
+                </circlestatbox_1_desc>
+                <circlestatbox_1_url name="p_circlestatbox_1_url" type="text" maxlength="4000">
+                    <label>Link</label>
+                    <value>http://www.example.com</value>
+                </circlestatbox_1_url>
+                <circlestatbox_1_bg name="p_circlestatbox_1_bg" type="text" maxlength="4000">
+                    <label>Background</label>
+                    <value>cp-cyan</value>
+                </circlestatbox_1_bg>
+            </fields>
+        </circlestatbox_1>
+        <quickbuttonbox_1 type="quickbuttonbox" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <quickbuttonbox_1_title name="p_quickbuttonbox_1_title" type="text" maxlength="4000" persist="true">
+                    <label>Title</label>
+                    <value>Box Title</value>
+                </quickbuttonbox_1_title>
+                <quickbuttonbox_1_val name="p_quickbuttonbox_1_val" type="text" maxlength="4000">
+                    <label>Value</label>
+                    <value>170</value>
+                </quickbuttonbox_1_val>
+                <quickbuttonbox_1_url name="p_quickbuttonbox_1_url" type="link" maxlength="4000" persist="true">
+                    <label/>
+                    <value type="action">
+                        <app>imac_soluction</app>
+                        <page>Dashboad</page>
+                        <action>index</action>
+                    </value>
+                </quickbuttonbox_1_url>
+                <quickbuttonbox_1_bg name="p_quickbuttonbox_1_bg" type="text" maxlength="4000" persist="true">
+                    <label>Background</label>
+                    <value>cp-cyan</value>
+                </quickbuttonbox_1_bg>
+                <quickbuttonbox_1_icn name="p_quickbuttonbox_1_icn" type="text" maxlength="4000" persist="true">
+                    <label>Icon</label>
+                    <value>fa-check</value>
+                </quickbuttonbox_1_icn>
+            </fields>
+        </quickbuttonbox_1>
+        <smallbox_1 type="smallbox" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <smallbox_1_title name="p_smallbox_1_title" type="text" maxlength="4000">
+                    <label>Small Box Title</label>
+                    <value>Small Box Title</value>
+                </smallbox_1_title>
+                <smallbox_1_val name="p_smallbox_1_val" type="text" maxlength="4000">
+                    <label>Value</label>
+                    <value>816</value>
+                </smallbox_1_val>
+                <smallbox_1_url name="p_smallbox_1_url" type="text" maxlength="4000">
+                    <label>Url</label>
+                    <value>http://www.example.com</value>
+                </smallbox_1_url>
+                <smallbox_1_lbl name="p_smallbox_1_lbl" type="text" maxlength="4000">
+                    <label>Url label</label>
+                    <value>View Details</value>
+                </smallbox_1_lbl>
+                <smallbox_1_bg name="p_smallbox_1_bg" type="text" maxlength="4000">
+                    <label>Background</label>
+                    <value>cp-cyan</value>
+                </smallbox_1_bg>
+                <smallbox_1_icn name="p_smallbox_1_icn" type="text" maxlength="4000">
+                    <label>Icon</label>
+                    <value>fa-check</value>
+                </smallbox_1_icn>
+            </fields>
+        </smallbox_1>
+        <statbox_1 type="statbox" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <statbox_1_title name="p_statbox_1_title" type="text" maxlength="4000">
+                    <label>Box Title</label>
+                    <value>Box Title</value>
+                </statbox_1_title>
+                <statbox_1_val name="p_statbox_1_val" type="text" maxlength="4000">
+                    <label>Value</label>
+                    <value>884</value>
+                </statbox_1_val>
+                <statbox_1_txt name="p_statbox_1_txt" type="text" maxlength="4000">
+                    <label>Url Text</label>
+                    <value>Read More...</value>
+                </statbox_1_txt>
+                <statbox_1_url name="p_statbox_1_url" type="text" maxlength="4000">
+                    <label>Url</label>
+                    <value>http://www.example.com</value>
+                </statbox_1_url>
+                <statbox_1_bg name="p_statbox_1_bg" type="text" maxlength="4000">
+                    <label>Background</label>
+                    <value>cp-cyan</value>
+                </statbox_1_bg>
+                <statbox_1_icn name="p_statbox_1_icn" type="text" maxlength="4000" persist="true">
+                    <label>Icon</label>
+                    <value>fa-check</value>
+                </statbox_1_icn>
+            </fields>
+        </statbox_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <data_saida name="p_data_saida" type="date" range="false" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" class="primary">
+                    <label>Data saida</label>
+                    <value>08-04-2011</value>
+                </data_saida>
+            </fields>
+            <tools-bar>
+                <item type="form" code="" class="primary" rel="pesquisar" custom_return="true">
+                    <title>Pesquisar</title>
+                    <app>imac_soluction</app>
+                    <page>Dashboad</page>
+                    <link>index</link>
+                    <parameter>/IGRP-Template/images/IGRP/IGRP2.3/app/imac_soluction/dashboad/Dashboad.xml?</parameter>
+                    <target>submit</target>
+                    <img>primary|fa-search</img>
+                    <preview>/IGRP-Template/images/IGRP/IGRP2.3/app/imac_soluction/dashboad/Dashboad.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

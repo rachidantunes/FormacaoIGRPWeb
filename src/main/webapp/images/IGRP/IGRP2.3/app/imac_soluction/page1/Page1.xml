@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/imac_soluction/page1/Page1.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Page1</page>
+    <app>imac_soluction</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.imac_soluction.pages</package_db>
+        <package_html>Page1</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=78</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Page1</title>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="save">
+                <title>Save</title>
+                <app>imac_soluction</app>
+                <page>Page1</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>primary|fa-angle-right</img>
+                <preview>/IGRP-Template/images/IGRP/IGRP2.3/app/imac_soluction/page1/Page1.xml</preview>
+            </item>
+        </toolsbar_1>
+        <formlist_1 type="formlist" xml-type="formlist" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <produtos name="p_produtos" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="" delimiter=";" desc="true">
+                    <label>Produtos</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                    <rules>
+                        <rule type="remote">
+                            <proc>GetPreco</proc>
+                            <requestFields>
+                                <item>p_produtos</item>
+                            </requestFields>
+                        </rule>
+                    </rules>
+                </produtos>
+                <preco name="p_preco" type="number" min="" max="" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="" total_col="false" total_row="false" totalrow="false" desc="true">
+                    <label>Preco</label>
+                </preco>
+                <quantidade name="p_quantidade" type="number" min="" max="" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="" total_col="false" total_row="false" totalrow="false" desc="true">
+                    <label>Quantidade</label>
+                    <rules>
+                        <rule type="remote">
+                            <proc>GetTotal</proc>
+                            <requestFields>
+                                <item>p_preco</item>
+                                <item>p_quantidade</item>
+                            </requestFields>
+                        </rule>
+                    </rules>
+                </quantidade>
+                <total name="p_total" type="plaintext" disable_output_escaping="false" html_class="" maxlength="250" right="false" desc="true">
+                    <label>Total</label>
+                </total>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <produtos name="p_produtos" desc="true">2</produtos>
+                        <produtos_desc name="p_produtos_desc">2</produtos_desc>
+                        <preco name="p_preco" desc="true">210</preco>
+                        <preco_desc name="p_preco_desc">210</preco_desc>
+                        <quantidade name="p_quantidade" desc="true">19</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">19</quantidade_desc>
+                        <total name="p_total" desc="true">Adipiscing sit totam stract perspiciatis</total>
+                        <total_desc name="p_total_desc">Adipiscing sit totam stract perspiciatis</total_desc>
+                    </row>
+                    <row>
+                        <produtos name="p_produtos" desc="true">2</produtos>
+                        <produtos_desc name="p_produtos_desc">2</produtos_desc>
+                        <preco name="p_preco" desc="true">6</preco>
+                        <preco_desc name="p_preco_desc">6</preco_desc>
+                        <quantidade name="p_quantidade" desc="true">198</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">198</quantidade_desc>
+                        <total name="p_total" desc="true">Anim stract natus ipsum voluptatem</total>
+                        <total_desc name="p_total_desc">Anim stract natus ipsum voluptatem</total_desc>
+                    </row>
+                    <row>
+                        <produtos name="p_produtos" desc="true">2</produtos>
+                        <produtos_desc name="p_produtos_desc">2</produtos_desc>
+                        <preco name="p_preco" desc="true">67</preco>
+                        <preco_desc name="p_preco_desc">67</preco_desc>
+                        <quantidade name="p_quantidade" desc="true">140</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">140</quantidade_desc>
+                        <total name="p_total" desc="true">Officia elit dolor ut perspiciatis</total>
+                        <total_desc name="p_total_desc">Officia elit dolor ut perspiciatis</total_desc>
+                    </row>
+                    <row>
+                        <produtos name="p_produtos" desc="true">2</produtos>
+                        <produtos_desc name="p_produtos_desc">2</produtos_desc>
+                        <preco name="p_preco" desc="true">185</preco>
+                        <preco_desc name="p_preco_desc">185</preco_desc>
+                        <quantidade name="p_quantidade" desc="true">140</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">140</quantidade_desc>
+                        <total name="p_total" desc="true">Iste perspiciatis sit totam omnis</total>
+                        <total_desc name="p_total_desc">Iste perspiciatis sit totam omnis</total_desc>
+                    </row>
+                    <row>
+                        <produtos name="p_produtos" desc="true">2</produtos>
+                        <produtos_desc name="p_produtos_desc">2</produtos_desc>
+                        <preco name="p_preco" desc="true">170</preco>
+                        <preco_desc name="p_preco_desc">170</preco_desc>
+                        <quantidade name="p_quantidade" desc="true">72</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">72</quantidade_desc>
+                        <total name="p_total" desc="true">Aliqua natus amet aperiam elit</total>
+                        <total_desc name="p_total_desc">Aliqua natus amet aperiam elit</total_desc>
+                    </row>
+                </value>
+            </table>
+        </formlist_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

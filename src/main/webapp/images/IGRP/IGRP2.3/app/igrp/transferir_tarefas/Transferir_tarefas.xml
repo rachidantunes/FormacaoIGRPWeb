@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/igrp/transferir_tarefas/Transferir_tarefas.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2018 - Copyright NOSI v.180723</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Transferir_tarefas</page>
+    <app>igrp</app>
+    <plsql>
+        <action>index</action>
+        <package_instance>null</package_instance>
+        <package_db>nosi.webapps.igrp.pages</package_db>
+        <package_html>Transferir_tarefas</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=33</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Transferir tarefas</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[Transferêcia de Tarefa]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <detalhes_de_processo name="p_detalhes_de_processo" type="separator" maxlength="250" placeholder="" right="false">
+                    <label>Detalhes de Processo</label>
+                </detalhes_de_processo>
+                <numero_processo name="p_numero_processo" type="text" maxlength="100" required="false" change="false" readonly="false" disabled="true" placeholder="" right="false">
+                    <label>Número Processo</label>
+                    <value>Laudantium sit consectetur officia magna</value>
+                </numero_processo>
+                <tipo_processo name="p_tipo_processo" type="text" maxlength="100" required="false" change="false" readonly="false" disabled="true" placeholder="" right="false">
+                    <label>Tipo Processo</label>
+                    <value>Aperiam doloremque ut deserunt natus</value>
+                </tipo_processo>
+                <criado_por_ name="p_criado_por_" type="text" maxlength="100" required="false" change="false" readonly="false" disabled="true" placeholder="" right="false">
+                    <label>Criado Por </label>
+                    <value>Labore lorem mollit aperiam officia</value>
+                </criado_por_>
+                <data_inicio name="p_data_inicio" type="date" maxlength="30" required="false" change="false" readonly="false" disabled="true" placeholder="" right="false" class="default" range="false">
+                    <label>Data Início</label>
+                    <value>03-02-2014</value>
+                </data_inicio>
+                <detalhes_de_tarefa name="p_detalhes_de_tarefa" type="separator" maxlength="250" placeholder="" right="false">
+                    <label>Detalhes de Tarefa</label>
+                </detalhes_de_tarefa>
+                <n_tarefa name="p_n_tarefa" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="true" placeholder="" right="false">
+                    <label>Nº Tarefa</label>
+                    <value>Perspiciatis aperiam accusantium amet officia</value>
+                </n_tarefa>
+                <descricao_de_tarefa name="p_descricao_de_tarefa" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="true" placeholder="" right="false">
+                    <label>Descrição de Tarefa</label>
+                    <value>Rem mollit sed elit totam</value>
+                </descricao_de_tarefa>
+                <atribuido_a name="p_atribuido_a" type="text" maxlength="100" required="false" change="false" readonly="false" disabled="true" placeholder="" right="false">
+                    <label>Atribuido à</label>
+                    <value>Aliqua doloremque mollit sed magna</value>
+                </atribuido_a>
+                <novo_utilizador name="p_novo_utilizador" type="lookup" action="index" page="Transferir_tarefas" app="igrp" lookup_type="LOOKUP" class="primary" maxlength="30" required="false" change="false" readonly="false" disabled="false" placeholder="" right="false">
+                    <label>Novo Utilizador</label>
+                    <value/>
+                    <lookup>http://igrp.teste.gov.cv/images/IGRP.bootstrap/app/BOOTSTRAP/xml/lookup.test.xml</lookup>
+                    <lookupParams/>
+                </novo_utilizador>
+                <hidden name="p_id_utilizador" type="hidden" maxlength="30" java-type="" tag="id_utilizador"/>
+                <hidden name="p_id" type="hidden" maxlength="100" java-type="String" tag="id"/>
+            </fields>
+            <tools-bar>
+                <item type="form" code="" class="success" rel="gravar">
+                    <title>Gravar</title>
+                    <app>igrp</app>
+                    <page>Transferir_tarefas</page>
+                    <link>index</link>
+                    <parameter>/IGRP/images/IGRP/IGRP2.3/app/igrp/transferir_tarefas/Transferir_tarefas.xml?</parameter>
+                    <target>submit</target>
+                    <img>success|fa-save</img>
+                </item>
+            </tools-bar>
+        </form_1>
+    </content>
+</rows>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_compra/registar_compra/Registar_compra.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Registar_compra</page>
+    <app>gestao_compra</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_compra.pages</package_db>
+        <package_html>Registar_compra</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=110</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Registar Compra</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p><strong>Registar compras</strong></p>
+]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="gravar">
+                <title>Gravar</title>
+                <app>gestao_compra</app>
+                <page>Registar_compra</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>primary|fa-save</img>
+                <preview>/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_compra/registar_compra/Registar_compra.xml</preview>
+            </item>
+        </toolsbar_1>
+        <produtos type="formlist" xml-type="formlist" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <produto name="p_produto" type="select" multiple="false" tags="false" domain="" maxlength="250" required="true" change="false" disabled="false" right="false" java-type="int" delimiter=";" desc="true">
+                    <label>Produto</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </produto>
+                <preco name="p_preco" type="number" min="" max="" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="double" total_col="false" total_row="false" totalrow="false" desc="true">
+                    <label>Preço</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </preco>
+                <quantidade name="p_quantidade" type="number" min="" max="" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="double" total_col="false" total_row="false" totalrow="false" desc="true">
+                    <label>Quantidade</label>
+                    <rules>
+                        <rule type="remote">
+                            <proc>calculaTotal</proc>
+                            <requestFields>
+                                <item>p_preco</item>
+                                <item>p_quantidade</item>
+                            </requestFields>
+                        </rule>
+                    </rules>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </quantidade>
+                <total name="p_total" type="plaintext" disable_output_escaping="false" html_class="" maxlength="250" right="false" desc="true">
+                    <label>Total</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </total>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <produto name="p_produto" desc="true">2</produto>
+                        <produto_desc name="p_produto_desc">2</produto_desc>
+                        <preco name="p_preco" desc="true">152</preco>
+                        <preco_desc name="p_preco_desc">152</preco_desc>
+                        <quantidade name="p_quantidade" desc="true">15</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">15</quantidade_desc>
+                        <total name="p_total" desc="true">Ipsum rem perspiciatis ipsum sed</total>
+                        <total_desc name="p_total_desc">Ipsum rem perspiciatis ipsum sed</total_desc>
+                    </row>
+                    <row>
+                        <produto name="p_produto" desc="true">2</produto>
+                        <produto_desc name="p_produto_desc">2</produto_desc>
+                        <preco name="p_preco" desc="true">149</preco>
+                        <preco_desc name="p_preco_desc">149</preco_desc>
+                        <quantidade name="p_quantidade" desc="true">60</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">60</quantidade_desc>
+                        <total name="p_total" desc="true">Lorem labore ut mollit anim</total>
+                        <total_desc name="p_total_desc">Lorem labore ut mollit anim</total_desc>
+                    </row>
+                    <row>
+                        <produto name="p_produto" desc="true">2</produto>
+                        <produto_desc name="p_produto_desc">2</produto_desc>
+                        <preco name="p_preco" desc="true">61</preco>
+                        <preco_desc name="p_preco_desc">61</preco_desc>
+                        <quantidade name="p_quantidade" desc="true">78</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">78</quantidade_desc>
+                        <total name="p_total" desc="true">Iste magna sit consectetur ipsum</total>
+                        <total_desc name="p_total_desc">Iste magna sit consectetur ipsum</total_desc>
+                    </row>
+                    <row>
+                        <produto name="p_produto" desc="true">2</produto>
+                        <produto_desc name="p_produto_desc">2</produto_desc>
+                        <preco name="p_preco" desc="true">118</preco>
+                        <preco_desc name="p_preco_desc">118</preco_desc>
+                        <quantidade name="p_quantidade" desc="true">102</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">102</quantidade_desc>
+                        <total name="p_total" desc="true">Consectetur magna totam rem labore</total>
+                        <total_desc name="p_total_desc">Consectetur magna totam rem labore</total_desc>
+                    </row>
+                    <row>
+                        <produto name="p_produto" desc="true">2</produto>
+                        <produto_desc name="p_produto_desc">2</produto_desc>
+                        <preco name="p_preco" desc="true">32</preco>
+                        <preco_desc name="p_preco_desc">32</preco_desc>
+                        <quantidade name="p_quantidade" desc="true">120</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">120</quantidade_desc>
+                        <total name="p_total" desc="true">Laudantium ut voluptatem aperiam doloremque</total>
+                        <total_desc name="p_total_desc">Laudantium ut voluptatem aperiam doloremque</total_desc>
+                    </row>
+                </value>
+            </table>
+        </produtos>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <loja name="p_loja" type="select" multiple="false" tags="false" domain="" maxlength="250" required="true" change="false" disabled="false" right="false" java-type="int">
+                    <label>Loja</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </loja>
+                <data_compra name="p_data_compra" type="date" range="false" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" class="primary">
+                    <label>Data compra</label>
+                    <value>08-06-2014</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                            <message>Data compra é de preenchimento obrigatorio</message>
+                        </validation>
+                        <validation>
+                            <annotation>@PastOrPresent</annotation>
+                            <message>Data inválido</message>
+                        </validation>
+                    </validations>
+                </data_compra>
+            </fields>
+        </form_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>
