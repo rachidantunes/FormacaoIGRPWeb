@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
+encoding//src/main/java/nosi/webapps/gestao_veiculo/services/soap_client/BaseActiveRecord.java=UTF-8
+encoding//src/main/java/nosi/webapps/gestao_veiculo/services/soap_client/SoapVeiculoServiceService.java=UTF-8
+encoding//src/main/java/nosi/webapps/gestao_veiculo/services/soap_client/SoapVeiculoServiceServiceLocator.java=UTF-8
+encoding//src/main/java/nosi/webapps/gestao_veiculo/services/soap_client/SoapVeiculoServiceServiceSoapBindingStub.java=UTF-8
+encoding//src/main/java/nosi/webapps/gestao_veiculo/services/soap_client/Veiculo.java=UTF-8
+encoding//src/main/java/nosi/webapps/gestao_veiculo/services/soap_client/Veiculo_service.java=UTF-8
+encoding//src/main/resources=UTF-8
+encoding//src/test/java=UTF-8
+encoding//src/test/resources=UTF-8
+encoding/<project>=UTF-8
